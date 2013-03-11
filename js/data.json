@@ -1,0 +1,72 @@
+{"values":
+	{
+		"recent":{
+			"sessions":1239059,
+			"users":124495,
+			"median session": 203,
+			"avg session": 752,
+			"new users": 72610
+			},
+		"past":{
+			"sessions":1239059,
+			"users":124495,
+			"median session": 203,
+			"avg session": 752,
+			"new users": 72610
+			}
+	},
+	"benchmarks":{
+	"All": {
+		"avg_session_length": {
+			"growth":-0.0157848,
+			"value":189.239
+		},
+		"avg_user_session_time": {
+			"growth":-0.0395252,
+			"value":26.7894
+		},
+		"avg_user_sessions": {
+			"growth":-0.0352461, 
+			"value":6.45496
+		},
+		"new_user_ratio": {
+			"growth":-0.136231,
+			"value":0.387933
+		},
+		"total_sessions": {
+			"growth":-0.102479,
+			"value":83388.1
+		},
+		"total_users": {
+			"growth":-0.0733766,
+			"value":14011.1
+		}
+	},
+	"News": {
+		"avg_session_length": {
+			"growth":-0.00088976,
+			"value":218.787
+		},
+		"avg_user_session_time": {
+			"growth":-0.0300035,
+			"value":62.3803
+		},
+		"avg_user_sessions": {
+			"growth":-0.034623, 
+			"value":13.8188
+		},
+		"new_user_ratio": {
+			"growth":-0.182254,
+			"value":0.265313
+		},
+		"total_sessions": {
+			"growth":-0.0667595,
+			"value":271693
+		},
+		"total_users": {
+			"growth":-0.0788487,
+			"value":23626.4
+		}
+	}
+}
+}

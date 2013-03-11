@@ -1,0 +1,364 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+	font-family: 'leagueGothic';
+	src: url('../fonts/leagueGothic/webfonts/leaguegothic-regular-webfont.eot'); /* IE9 Compat Modes */
+	src:  url('../fonts/leagueGothic/webfonts/leaguegothic-regular-webfont?#iefix')  format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/leagueGothic/webfonts/leaguegothic-regular-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/leagueGothic/webfonts/leaguegothic-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/leagueGothic/webfonts/leaguegothic-regular-webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+body {
+	background-image:url(../img/wallpaper.jpg);
+	font-family: 'leagueGothic', sans-serif;
+}
+
+.container {
+	margin: 0px auto 0px auto;
+	padding: 0px 25px;
+	min-width: 790px;
+	width:auto;
+}
+
+.field {
+	background-image:url(../img/fabric.png);
+	border-radius:5px;
+}
+
+div.nav {
+	width:185px;
+	float:left;
+	display:block;
+}
+
+.content {
+	min-width:700px;
+	max-width:745px;
+}
+
+.field {
+	padding:10px 0px;
+}
+
+
+nav ul {
+	margin-right:25px;
+}
+
+nav li {
+	line-height:30px;
+	border-bottom:1px solid #ccc;
+	list-style:none;
+}
+
+
+.module, .halfmodule {
+	background-color:#FFF;
+	border-radius:5px;
+	-moz-box-shadow:    0px 0px 3px 1px #ccc;
+    -webkit-box-shadow: 0px 0px 3px 1px #ccc;
+    box-shadow:         0px 0px 3px 1px #ccc;
+    margin
+    display:block;
+    margin:20px 25px;
+    position:relative;
+}
+
+.module {
+	min-width:660px;
+}
+
+.averageBox {
+	width:65px;
+	padding-left:5px;
+	margin-bottom:30px;
+}
+
+
+
+.halfmodule {
+	width:340px;
+	height:240px;
+}
+
+div.content {
+	margin-left:195px;
+}
+
+.breadcrumbs {
+	padding:0px 25px;
+	color:#7C7C7C;
+	margin-bottom:40px;
+}
+
+.breadcrumbs p {
+	float:left;
+	position:relative;
+}
+
+.title_row {
+	height:20px;
+}
+
+.content_box, .benchmark-box, .average-container { 
+    border-top:1px solid black;
+}
+
+.benchmark-box .row div, .average-container div {
+	text-align:center;
+	line-height: 1em;
+	font-size: 1.2em;
+}
+
+.average-container .title {
+	margin-bottom:15px;
+}
+
+
+
+.benchmark-box .row div {
+	width:55px;
+}
+
+div.number {
+	width:100%;
+}
+
+.benchmark-box .row {
+	margin-left:10px;
+	margin-top:-10px;
+}
+
+.benchmarks {
+	margin-top: 80px;
+}
+
+.title { 
+    position: relative; 
+    top : -.8em;
+    display: inline; 
+    background-color: white;
+    margin-left: 20px;
+    font-size:1.5em;
+}
+
+.users-sessions {
+	height:180px;
+}
+
+.users-sessions > div {
+	height:100px;
+	width:140px;
+	float:left;
+	display:block;
+}
+
+.users-sessions > div {
+	margin-left:20px;
+}
+
+.users-sessions > div:first-child {
+	margin-left:0px;
+} 
+
+.row {
+	margin-left:20px;
+}
+
+.users-sessions span, .time span {
+	width:100%;
+	position:relative;
+	display:block;
+	text-align:center;
+	overflow:hidden;
+}
+
+.stat-box {
+	padding-top:50px;
+}
+
+.change{
+	padding-top:10px;
+
+}
+.change-box {
+	height:130px;
+	border:1px solid #DDD;
+	border-radius:5px;
+	-moz-box-shadow:    1px 3px 3px 1px #ccc;
+    -webkit-box-shadow: 1px 3px 3px 1px #ccc;
+    box-shadow:         1px 3px 3px 1px #ccc;
+    padding:5px;
+}
+
+
+.benchmark-box div, .main-change div {
+	display:inline-block;
+	float:left;
+}
+
+.main-change div {
+	width:45%;
+}
+
+.benchmark-box .title {
+	margin-left:15px;
+}
+
+.positive:after {
+	content:url(../img/uparrow.png);
+}
+
+.negative:after {
+	content:url(../img/downarrow.png);
+}
+
+.trend span {
+	position: relative; 
+    top : -1.2em;
+    display: inline; 
+    background-color: white;
+    margin-left:10px;
+}
+
+.newusers {
+	height:240px;
+	margin-left:20px;
+}
+
+.newusers > div {
+	float:left;
+	position:relative;
+	display:block;
+}
+
+.mainpie {
+	width:300px;
+	border:1px solid #DDD;
+	border-radius:5px;
+	-moz-box-shadow:    1px 3px 3px 1px #ccc;
+    -webkit-box-shadow: 1px 3px 3px 1px #ccc;
+    box-shadow:         1px 3px 3px 1px #ccc;
+    height:100%;
+    margin-right:20px;
+}
+
+.percent-column {
+	width:140px;
+}
+
+.mainpie-container {
+	height:220px;
+    width:300px;
+    margin-right:20px;
+}
+
+.mainpie-container div {
+	display:block;
+	float:left;
+}
+
+.mainpie-container > div:first-child {
+	width:180px;
+	margin-right:20px;
+}
+
+div.time {
+	margin-bottom:20px;
+	width:100%;
+}
+
+.time .stat-label {
+	line-height: 1.8em;
+}
+
+.subpie-column {
+	width:80px;
+	height:150px;
+	padding-top:20px;
+}
+
+.subpie-column .title {
+	margin-left:5px;
+	text-align:center;
+
+}
+
+
+.subpie-column .subpie:first-child {
+	margin-bottom:18px;
+}
+
+.maingraph {
+	width:540px;
+	min-height:140px;
+	margin-right:20px;
+	border:1px solid black;
+
+}
+
+.graphrow > div {
+	display:block;
+	float:left;
+	position:relative;
+}
+
+.graphrow {
+	border:1px solid #DDD;
+	border-radius:5px;
+	-moz-box-shadow:    1px 3px 3px 1px #ccc;
+    -webkit-box-shadow: 1px 3px 3px 1px #ccc;
+    box-shadow:         1px 3px 3px 1px #ccc;
+    margin:10px 0px 10px 15px;
+    width:645px;
+    padding:5px;
+}
+
+.max {
+	width:80px;
+	padding-top:40px;
+	text-align: center
+}
+
+.median {
+	padding-bottom:20px;
+}
+
+.mean, .median {
+	text-align:center;
+}
+
+.percentage {
+	text-align:center;
+}
+
+.mainpie-container .percentage {
+	width:138px;
+}
+
+.subpie .percentage {
+	width:78px;
+}
+
+.number {
+	font-size: 2.5em;
+	line-height:1em;
+}
+
+.bigNumber {
+	font-size: 3em;
+	line-height:1em;
+}
+
+.number span {
+	display:inline;
+}
+
+.stat-label {
+	font-size: 1.5em;
+}
+

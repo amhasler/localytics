@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/main.css">
+        <!--<link rel="stylesheet" href="css/original.css">-->
+
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="field nav">
+                    <nav>
+                        <ul>
+                            <li>Dashboard</li>
+                            <li>Engagement</li>
+                            <li>Events</li>
+                            <li>Screens</li>
+                            <li>Funnels</li>
+                            <li>Segments New</li>
+                            <li>Maps</li>
+                            <li>My Reports</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="dynamic-content">
+                    <div class="content field">
+                        <div class="breadcrumbs">
+                            <p>Dashboard</p>
+                        </div>
+                        <div class="module">
+                            <div class="title_row"></div>
+                            <div class="content_box">
+                                <div class="title">Users and Sessions</div>
+                                <div class="row users-sessions">
+                                    <div class="stat">
+                                        <div class="stat-box">
+                                            <span class="sessions bigNumber" id="sessions"></span>
+                                            <span class="stat-label">Sessions</span>
+                                        </div>
+                                    </div>
+                                    <div class="change">
+                                        <div class="change-box">
+                                            <div class="main-change">
+                                                <div class="trend">
+                                                    <span class="sessionchange"></span>
+                                                </div>
+                                                <div class="number main-percent percent"><span id="sessionchange"></span>%</div>
+                                            </div>
+                                            <div class="benchmarks">
+                                                <div class="benchmark-box">
+                                                    <div class="title">Benchmarks</div>
+                                                    <div class="row">            
+                                                    <div>
+                                                        <div class="number percent"><span id="all_total_sessions"></span>%</div>
+                                                        <span>All</span>
+                                                    </div>
+                                                    <div>
+                                                        <div class="number percent"><span id="industry_total_sessions"></span>%</div>
+                                                        <span class="industry"></span>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-box">
+                                            <span class="users bigNumber" id="users"></span>
+                                            <span class="stat-label">Users</span>
+                                        </div>
+                                    </div>
+                                    <div class="change">
+                                        <div class="change-box">
+                                            <div class="main-change">
+                                                <div class="trend">
+                                                    <span class="userchange"></span>
+                                                </div>
+                                                <div class="main-percent number percent"><span id="userchange"></span>%</div>
+                                            </div>
+                                            <div class="benchmarks">
+                                                <div class="benchmark-box">
+                                                    <div class="title">Benchmarks</div>
+                                                    <div class="row">
+                                                    <div>
+                                                        <div class="number percent"><span id="all_total_users"></span>%</div>
+                                                        <span>All</span>
+                                                    </div>
+                                                    <div>
+                                                        <div class="number percent"><span id="industry_total_users"></span>%</div>
+                                                        <span class="industry"></span>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="halfmodule">
+                            <div class="title_row"></div>
+                            <div class="content_box">
+                                <div class="title">Session Times</div>
+                                
+                                    <div class="mainpie-container row">
+                                    	<div>
+	                                    		<div class="time">
+	                                            <span class="sessions bigNumber" id="mediantime"></span>
+	                                            <span class="stat-label">Median Session Length</span>
+	                                        </div>
+	                                        <div class="time">
+	                                            <span class="sessions bigNumber" id="avgtime"></span>
+	                                            <span class="stat-label">Average Session Length</span>
+	                                        </div>
+	                                      </div>
+                                        <div class="change-box subpie-column">
+                                        	<div class="average-container">
+                                        		<div class="title">Benchmarks</div>
+                                        		<div class="averageBox">
+		                                        	<span id="alltime"></span>
+		                                        	<span>All</span>
+		                                        </div>
+		                                        <div class="averageBox">
+		                                        	<span id="industrytime"></span>
+		                                        	<span class="industry"></span>
+		                                        </div>
+	                                      </div>
+                                      	</div>
+		                                
+                               			</div>
+                                
+                            </div>
+                        </div>
+                        <!--
+                        <div class="module">
+                            <div class="title_row"></div>
+                            <div class="content_box">
+                                <div class="title">Session Times</div>
+                                <div class="row mean"><div class="number"><span>12.5</span> minutes</div><div>Average Session Length</div></div>
+                                <div class="row graphrow">
+                                    <div class="maingraph"></div>
+                                    <div class="max"><div class="number"><span>30</span> minutes</div> maximum session time</div>
+                                </div>
+                                <div class="row median"><div><div class="number"><span>2.5</span> minutes</div></div><div>Mean Session Length</div>
+                            </div>
+                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/highcharts.js"></script>
+
+        <script src="js/numeral.min.js"></script>
+        <script src="js/json_delivery.js"></script>
+        <script src="js/gridOverlay.js"></script>
+        <script>
+        $(document).ready(function() {
+        	updateUS();
+        });
+        </script>
+
+    </body>
+</html>
