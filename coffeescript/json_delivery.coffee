@@ -2,17 +2,17 @@
 industry = "News"
 
 setIndustry = (industry) ->
-  $('span.industry').html(industry);
+  $('span.industry').html(industry)
 
 
 #Make times better looking
 prettyPlaceTimes = (times) ->
-  times = (time/60 for time in times)
-  times = (numeral(time).format('0,0.0') for time in times)
-  document.getElementById('avgtime').innerHTML = times[0] + " minutes"
-  document.getElementById('mediantime').innerHTML = times[1] + " minutes"
-  document.getElementById('alltime').innerHTML = times[2] + " minutes"
-  document.getElementById('industrytime').innerHTML = times[3] + " minutes"
+  times = ((numeral(time/60).format('0,0.0')) + " minutes" for time in times)
+  $('#avgtime').html(times[0])
+  $('#mediantime').html(times[1])
+  $('#alltime').html(times[2])
+  $('#industrytime').html(times[3])
+  return
 
 
 #change arrow direction
@@ -27,20 +27,20 @@ changeArrow = (change, id) ->
 makePrettyBig = (ugly) ->
   for k of ugly
     ugly[k] = numeral(ugly[k]).format('0,0')
-  PlacePretty(ugly)
-  return ugly
+  placePretty(ugly)
+  
 
 #place big numbers
-PlacePretty = (pretty) ->
+placePretty = (pretty) ->
   for k of pretty
-    document.getElementById(k).innerHTML = pretty[k]
-  return
+    $('#'+k).html(pretty[k])
+  
 
 makePrettyPercent = (ugly) ->
   for k of ugly
     ugly[k] = numeral(ugly[k]).format('0,0.0')
-  PlacePretty(ugly)
-  return
+  placePretty(ugly)
+  
 
 #This cleans the benchmark percentages
 makeBenchmarkPretty = (ugly) ->
