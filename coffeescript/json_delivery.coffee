@@ -1,5 +1,5 @@
 #Set industry
-industry = "News ADAM"
+industry = "News"
 
 setIndustry = (industry) ->
   $('span.industry').html(industry)
